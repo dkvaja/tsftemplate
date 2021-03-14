@@ -1,0 +1,126 @@
+/* designed by dk_vaja */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline-style: none;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+header {
+  background-color: white;
+  width: 100%;
+  height: 110px;
+}
+aside {
+  background-color: white;
+  position: absolute;
+  width: 100px;
+  height: 100vh;
+  top: 0;
+  box-shadow: 1px 0px 20px 0.1px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  width: 50px;
+}
+
+.menu-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px 0px;
+  width: 90px;
+  color: rgb(141, 141, 141);
+}
+.menu-item h4 {
+  font-size: 0.8rem;
+}
+.menu-item a:hover,
+.menu-item a:active {
+  background-color: rgb(184, 204, 219);
+  border-left: 5px solid skyblue;
+  width: 100px;
+  color: black;
+}
+.menu-item img {
+  width: 30px;
+  color: rgb(141, 141, 141);
+}
+.container {
+  background-color: rgb(241, 241, 241);
+  width: 100%;
+  height: 84.6vh;
+  position: absolute;
+  left: 100px;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 40px;
+}
+.box {
+  /* background-color: blue; */
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box h4 {
+  align-self: flex-start;
+  color: gray;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+}
+
+input[type="file"] {
+  color: transparent;
+}
+input[type="text"] {
+  border-radius: 10px;
+  border: none;
+  padding: 20px 20px;
+  font-weight: bold;
+  color: gray;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+input {
+  margin: 10px;
+}
+
+h5 {
+  text-align: center;
+}
